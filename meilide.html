@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美丽的他 - 地球村BL</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 小便签样式 */
+        .note-page {
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            min-height: 100vh;
+            padding: 40px;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        .note-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            position: relative;
+        }
+        
+        .note-container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        
+        .note-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .note-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .rating {
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+        
+        .douban-score {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .english-name {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .note-image {
+            display: block;
+            max-width: 300px;
+            margin: 0 auto 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .note-section {
+            margin-bottom: 30px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 15px;
+            font-weight: bold;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        
+        .note-content {
+            line-height: 1.8;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="note-page">
+        <div class="note-container">
+            <div class="note-header">
+                <h1 class="note-title">美丽的他</h1>
+                <div class="rating">★★★★☆</div>
+                <div class="douban-score">豆瓣评分：8.8</div>
+                <div class="english-name">英文名：My Beautiful Man</div>
+                <img src="./images/meilide.png" alt="美丽的他" class="note-image">
+            </div>
+            
+            <div class="note-section">
+                <h2 class="section-subtitle">剧情简介</h2>
+                <p class="note-content">平良一成（萩原利久饰）因为口吃而无法随心所欲地说话，从小就不擅于和周围的人相处，最终变成孤零零的高中3年级学生。平良的同学清居奏（八木勇征饰）是位居学校金字塔顶点的压倒性领袖人物。高中3年级的春天，在班级更换的自我介绍中，平良由于过于紧张而口吃，之后在班里被当做透明人对待，并被清居等人的团体所使唤。但是，平良非但没有在意这件事，反而觉得很开心。其实，平良从看到清居第一眼的瞬间就深深爱上了他。并暗自把冷酷又美丽的清居当作“国王”一样崇拜，忠诚地持续为他采购午餐。平良不清楚这份感情到底是憧憬还是什么。虽然无法弄明白自己的心情，但是以班级内的关系和等级发生变化为契机，两人的关系急速展开。</p>
+            </div>
+            
+            <div class="note-section">
+                <h2 class="section-subtitle">评价</h2>
+                <p class="note-content">这部剧好多人喜欢，评分也很高。我很喜欢剧里的女王受，真的很有魅力。但为什么在我这里排名不高呢，因为这个攻在我看来都不是口吃了，感觉像个傻子。</p>
+            </div>
+            
+            <a href="japan.html" class="back-link">返回日本BL推荐</a>
+        </div>
+    </div>
+    <!-- 免责声明 -->
+    <footer class="footer" style="margin-top: 40px;">
+        <p style="font-size: 14px; opacity: 0.8;">免责声明：网页星级存在主观因素，不喜勿喷。补充豆瓣评分供参考。笨人阅片数量有限，若有你觉得不错的BL作品我没放上去，欢迎联系笨人。</p>
+    </footer>
+</body>
+</html>

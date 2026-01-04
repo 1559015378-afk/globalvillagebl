@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语义错误 - 地球村BL</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 小便签样式 */
+        .note-page {
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            min-height: 100vh;
+            padding: 40px;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        .note-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            position: relative;
+        }
+        
+        .note-container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        
+        .note-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .note-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .rating {
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+        
+        .douban-score {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .english-name {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .note-image {
+            display: block;
+            max-width: 300px;
+            margin: 0 auto 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .note-section {
+            margin-bottom: 30px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 15px;
+            font-weight: bold;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        
+        .note-content {
+            line-height: 1.8;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #2980b9, #3498db);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(41, 128, 185, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="note-page">
+        <div class="note-container">
+            <div class="note-header">
+                <h1 class="note-title">语义错误</h1>
+                <div class="rating">★★★★★</div>
+                <div class="douban-score">豆瓣评分：8.6</div>
+                <div class="english-name">英文名：Semantic Error</div>
+                <img src="./images/yuyicuowu.png" alt="语义错误" class="note-image">
+            </div>
+            
+            <div class="note-section">
+                <h2 class="section-subtitle">剧情简介</h2>
+                <p class="note-content">工学院的风云人物张宰英（朴栖含饰），是个拥有模特儿好身材和脸蛋的视觉设计系大四生，而成绩优异的边缘人秋尚宇（朴宰灿饰），则是计算机工程系的大三生，逻辑能力佳却是个书呆子。个性截然不同的两个人，却阴错阳差一起制作手游，张宰英对于秋尚宇来说，就像是电脑程式中的BUG错误指令，一场甜蜜的校园爱情就此展开。</p>
+            </div>
+            
+            <div class="note-section">
+                <h2 class="section-subtitle">评价</h2>
+                <p class="note-content">全体起立！我的韩腐白月光！贼好看了！果然还得是女导演！（有些人可能说主角颜值get不到，但是算我求你了，往下看，真的远看越顺眼，你最后会发现，其实电视剧够好，颜值什么的都不是问题，只有剧不行才要强调颜值。）</p>
+            </div>
+            
+            <a href="korea.html" class="back-link">返回韩国BL推荐</a>
+        </div>
+    </div>
+    <!-- 免责声明 -->
+    <footer class="footer" style="margin-top: 40px;">
+        <p style="font-size: 14px; opacity: 0.8;">免责声明：网页星级存在主观因素，不喜勿喷。补充豆瓣评分供参考。</p>
+    </footer>
+</body>
+</html>

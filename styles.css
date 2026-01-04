@@ -1,0 +1,885 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 主题颜色定义 */
+body.rainbow-theme {
+    background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3, #54a0ff);
+    background-size: 400% 400%;
+    animation: rainbow 15s ease infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.china-theme {
+    background: linear-gradient(135deg, #c0392b, #e74c3c, #922b21);
+}
+
+.korea-theme {
+    background: linear-gradient(135deg, #3498db, #5dade2, #2980b9);
+}
+
+.japan-theme {
+    background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #ff69b4);
+}
+
+.thailand-theme {
+    background: linear-gradient(135deg, #1e8449, #27ae60, #145a32);
+}
+
+.western-theme {
+    background: linear-gradient(135deg, #9b59b6, #bb8fce, #8e44ad);
+}
+
+/* 导航条样式 */
+.navbar {
+    background-color: #f4f1e8; /* 纸色 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-logo-earth {
+    color: #666666;
+    font-family: "STXinwei", "华文新魏", serif;
+}
+
+.nav-logo-bl {
+    color: #666666;
+    font-family: Calibri, sans-serif;
+}
+
+.hero-title-earth {
+    font-family: "STXinwei", "华文新魏", serif;
+}
+
+.hero-title-bl {
+    font-family: Calibri, sans-serif;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+/* 首页按钮 - 彩虹色 */
+.nav-link-home {
+    background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3, #54a0ff);
+    background-size: 400% 400%;
+    animation: rainbow 15s ease infinite;
+}
+
+/* 中国按钮 - 红色 */
+.nav-link-china {
+    background: linear-gradient(135deg, #c0392b, #e74c3c, #ff6b6b);
+}
+
+/* 韩国按钮 - 蓝色 */
+.nav-link-korea {
+    background: linear-gradient(135deg, #2980b9, #3498db, #5dade2);
+}
+
+/* 日本按钮 - 粉色 */
+.nav-link-japan {
+    background: linear-gradient(135deg, #ff69b4, #ffb6c1, #ffc0cb);
+}
+
+/* 泰国按钮 - 绿色 */
+.nav-link-thailand {
+    background: linear-gradient(135deg, #145a32, #27ae60, #2E8B57);
+}
+
+/* 欧美按钮 - 紫色 */
+.nav-link-western {
+    background: linear-gradient(135deg, #9b59b6, #bb8fce, #8e44ad);
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 主内容区 */
+.main-content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+/* 首页英雄区域 */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(244, 241, 232, 0.9);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #666666;
+    font-weight: 800;
+    font-family: "STXinwei", "华文新魏", serif;
+    text-shadow: 2px 2px 4px rgba(102, 126, 234, 0.1);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: #ffb6c1;
+    font-weight: 500;
+}
+
+/* 爱心图标样式 */
+.heart-icon {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    vertical-align: middle;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.heart-icon::before,
+.heart-icon::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    background: #ffb6c1;
+    border-radius: 12px 12px 0 0;
+    top: 0;
+}
+
+.heart-icon::before {
+    left: 12px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart-icon::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+/* 首页主题字体样式 */
+.rainbow-theme .section-title {
+    color: #666666;
+    font-weight: 700;
+}
+
+.rainbow-theme .country-card h3 {
+    font-weight: 700;
+}
+
+.rainbow-theme .drama-info h3 {
+    font-weight: 600;
+}
+
+.rainbow-theme .drama-item h3 {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+/* 页面头部 */
+.page-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(244, 241, 232, 0.95);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* 中国主题字体样式 */
+.china-theme .page-title {
+    background: linear-gradient(135deg, #c0392b, #e74c3c, #ff6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(192, 57, 43, 0.1);
+}
+
+.china-theme .page-subtitle {
+    color: #c0392b;
+    font-weight: 500;
+}
+
+.china-theme .section-title {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+.china-theme .drama-info h3 {
+    color: #c0392b;
+    font-weight: 600;
+}
+
+.china-theme .drama-item h3 {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+/* 韩国主题字体样式 */
+.korea-theme .page-title {
+    background: linear-gradient(135deg, #2980b9, #3498db, #5dade2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(41, 128, 185, 0.1);
+}
+
+.korea-theme .page-subtitle {
+    color: #2980b9;
+    font-weight: 500;
+}
+
+.korea-theme .section-title {
+    color: #3498db;
+    font-weight: 700;
+}
+
+.korea-theme .drama-info h3 {
+    color: #2980b9;
+    font-weight: 600;
+}
+
+.korea-theme .drama-item h3 {
+    color: #3498db;
+    font-weight: 600;
+}
+
+/* 日本主题字体样式 */
+.japan-theme .page-title {
+    background: linear-gradient(135deg, #ff69b4, #ffb6c1, #ffc0cb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.1);
+}
+
+.japan-theme .page-subtitle {
+    color: #ff69b4;
+    font-weight: 500;
+}
+
+.japan-theme .section-title {
+    color: #ff69b4;
+    font-weight: 700;
+}
+
+.japan-theme .drama-info h3 {
+    color: #ff69b4;
+    font-weight: 600;
+}
+
+.japan-theme .drama-item h3 {
+    color: #ffb6c1;
+    font-weight: 600;
+}
+
+/* 泰国主题字体样式 */
+.thailand-theme .page-title {
+    background: linear-gradient(135deg, #145a32, #27ae60, #2E8B57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(20, 90, 50, 0.1);
+}
+
+.thailand-theme .page-subtitle {
+    color: #145a32;
+    font-weight: 500;
+}
+
+.thailand-theme .section-title {
+    color: #27ae60;
+    font-weight: 700;
+}
+
+.thailand-theme .drama-info h3 {
+    color: #145a32;
+    font-weight: 600;
+}
+
+.thailand-theme .drama-item h3 {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+/* 欧美主题字体样式 */
+.western-theme .page-title {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6, #bb8fce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(142, 68, 173, 0.1);
+}
+
+.western-theme .page-subtitle {
+    color: #8e44ad;
+    font-weight: 500;
+}
+
+.western-theme .section-title {
+    color: #9b59b6;
+    font-weight: 700;
+}
+
+.western-theme .drama-info h3 {
+    color: #8e44ad;
+    font-weight: 600;
+}
+
+.western-theme .drama-item h3 {
+    color: #9b59b6;
+    font-weight: 600;
+}
+
+/* 地图区域 */
+.map-section {
+    background: rgba(244, 241, 232, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.map-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.world-map {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.map-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.map-link {
+    position: absolute;
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(244, 241, 232, 0.9);
+    color: #333;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.map-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.china-link {
+    left: 76%;
+    top: 37%;
+    background-color: #e74c3c;
+}
+
+.korea-link {
+    left: 84.5%;
+    top: 38.4%;
+    background-color: #3498db;
+}
+
+.japan-link {
+    left: 90.5%;
+    top: 35.6%;
+    background-color: #ffb6c1;
+}
+
+.thailand-link {
+    left: 73%;
+    top: 61%;
+    background-color: #2E8B57;
+}
+
+.europe-link {
+    left: 50%;
+    top: 21.6%;
+    background-color: #9b59b6;
+}
+
+.america-link {
+    left: 19%;
+    top: 35%;
+    background-color: #9b59b6;
+}
+
+/* 快速导航卡片 */
+.quick-nav {
+    background: rgba(244, 241, 232, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* 国家卡片主题样式 */
+.country-card {
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.china-card {
+    background: linear-gradient(135deg, #c0392b, #e74c3c, #ff6b6b);
+}
+
+.korea-card {
+    background: linear-gradient(135deg, #2980b9, #3498db, #5dade2);
+}
+
+.japan-card {
+    background: linear-gradient(135deg, #ff69b4, #ffb6c1, #ffc0cb);
+}
+
+.thailand-card {
+    background: linear-gradient(135deg, #145a32, #27ae60, #2E8B57);
+}
+
+.western-card {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6, #bb8fce);
+}
+
+/* 标签主题样式 */
+.china-theme .tag {
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+}
+
+.korea-theme .tag {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+}
+
+.japan-theme .tag {
+    background: linear-gradient(135deg, #ff69b4, #ffb6c1);
+}
+
+.thailand-theme .tag {
+    background: linear-gradient(135deg, #145a32, #27ae60);
+}
+
+.western-theme .tag {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+}
+
+/* 剧集卡片主题样式 */
+.china-theme .drama-item {
+    background: linear-gradient(135deg, #fff5f5, #ffe6e6);
+}
+
+.korea-theme .drama-item {
+    background: linear-gradient(135deg, #f0f8ff, #e6f2ff);
+}
+
+.japan-theme .drama-item {
+    background: linear-gradient(135deg, #fff0f5, #ffe6f0);
+}
+
+.thailand-theme .drama-item {
+    background: linear-gradient(135deg, #f0fff4, #e6ffe6);
+}
+
+.western-theme .drama-item {
+    background: linear-gradient(135deg, #f5f0ff, #ebe6ff);
+}
+
+.country-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.country-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.country-card p {
+    opacity: 0.9;
+}
+
+/* 剧集区域 */
+.drama-section {
+    background: rgba(244, 241, 232, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.drama-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+.drama-card {
+    background: #f4f1e8;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-width: 350px;
+    width: 100%;
+}
+
+.drama-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.drama-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.drama-info {
+    padding: 20px;
+}
+
+.drama-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.drama-year {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.drama-desc {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.drama-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.drama-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* 更多推荐区域 */
+.more-section {
+    background: rgba(244, 241, 232, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.drama-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.drama-item {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.drama-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.drama-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.drama-item p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* 页脚 */
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;
+}
+
+/* 响应式设计 - 平板 */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .nav-menu a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .map-link {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    
+    .china-link { top: 22%; left: 68%; }
+    .korea-link { top: 20%; left: 73%; }
+    .japan-link { top: 19%; left: 78%; }
+    .thailand-link { top: 32%; left: 65%; }
+    .europe-link { top: 15%; left: 45%; }
+    .america-link { top: 17%; left: 18%; }
+    
+    .drama-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .drama-image {
+        height: 300px;
+    }
+    
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .country-card {
+        padding: 20px;
+    }
+    
+    .card-icon {
+        font-size: 2rem;
+    }
+    
+    .country-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* 响应式设计 - 手机 */
+@media (max-width: 480px) {
+    .main-content {
+        padding: 20px 10px;
+    }
+    
+    .hero-section,
+    .page-header,
+    .map-section,
+    .quick-nav,
+    .drama-section,
+    .more-section {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .page-title {
+        font-size: 1.5rem;
+    }
+    
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+    
+    .nav-menu {
+        gap: 5px;
+    }
+    
+    .nav-menu a {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+    
+    .map-link {
+        padding: 4px 8px;
+        font-size: 0.7rem;
+    }
+    
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .drama-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .drama-image {
+        height: 250px;
+    }
+}

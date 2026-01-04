@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>默默的我，不默默的我们 - 地球村BL</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 小便签样式 */
+        .note-page {
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            min-height: 100vh;
+            padding: 40px;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        .note-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            position: relative;
+        }
+        
+        .note-container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        
+        .note-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .note-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .rating {
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+        
+        .douban-score {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .note-image {
+            display: block;
+            max-width: 300px;
+            margin: 0 auto 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .english-name {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .note-section {
+            margin-bottom: 30px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 15px;
+            font-weight: bold;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        
+        .note-content {
+            line-height: 1.8;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #ff6b6b, #ffa07a);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="note-page">
+        <div class="note-container">
+            <div class="note-header">
+                <h1 class="note-title">默默的我，不默默的我们</h1>
+                <div class="rating">★★★★☆</div>
+                <div class="douban-score">豆瓣评分：7.4</div>
+                <div class="english-name">英文名：About Youth</div>
+                <img src="./images/momo.png" alt="默默的我，不默默的我们" class="note-image">
+            </div>
+            
+            <div class="note-section">
+                <h2 class="section-subtitle">剧情简介</h2>
+                <p class="note-content">《默默的我，不默默的我们》是一部中国台湾校园爱情剧，讲述了精英学生叶广和面摊小老板徐启章在学生会会长选举背景下相遇，通过相互治愈重新认识自我的故事。叶广是学校人气王，但内心孤独；徐启章是普通面摊老板兼乐团主唱，隐藏音乐才华。两人意外相识后，叶广被徐启章的真实性格吸引，逐渐放下精英包袱，徐启章也学会表达自我。叶广在父母高压下（父亲只关注成绩）感到窒息，徐启章则因家庭普通和丧父经历封闭内心。他们通过音乐、谈心彼此支持——叶广帮徐启章重拾舞台自信，徐启章带叶广体验自由生活。‌‌‌</p>
+            </div>
+            
+            <div class="note-section">
+                <h2 class="section-subtitle">评价</h2>
+                <p class="note-content">当年很火，也是治愈系。颜值爆棚，剧情略简单。</p>
+            </div>
+            
+            <a href="china.html" class="back-link">返回中国BL推荐</a>
+        </div>
+    </div>
+    <!-- 免责声明 -->
+    <footer class="footer" style="margin-top: 40px;">
+        <p style="font-size: 14px; opacity: 0.8;">免责声明：网页星级存在主观因素，不喜勿喷。补充豆瓣评分供参考。</p>
+    </footer>
+</body>
+</html>
