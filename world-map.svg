@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 500" width="1000" height="500">
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="continentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b6b">
+        <animate attributeName="stop-color" values="#ff6b6b;#feca57;#48dbfb;#ff9ff3;#54a0ff;#ff6b6b" dur="15s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="25%" stop-color="#feca57">
+        <animate attributeName="stop-color" values="#feca57;#48dbfb;#ff9ff3;#54a0ff;#ff6b6b;#feca57" dur="15s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#48dbfb">
+        <animate attributeName="stop-color" values="#48dbfb;#ff9ff3;#54a0ff;#ff6b6b;#feca57;#48dbfb" dur="15s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="75%" stop-color="#ff9ff3">
+        <animate attributeName="stop-color" values="#ff9ff3;#54a0ff;#ff6b6b;#feca57;#48dbfb;#ff9ff3" dur="15s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#54a0ff">
+        <animate attributeName="stop-color" values="#54a0ff;#ff6b6b;#feca57;#48dbfb;#ff9ff3;#54a0ff" dur="15s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- 北美洲 -->
+  <path d="M40,80 L280,60 L360,140 L320,300 L160,340 L20,260 Z"
+        fill="url(#continentGradient)" stroke="#808080" stroke-width="2"/>
+
+  <!-- 南美洲 -->
+  <path d="M160,340 L300,320 L360,420 L320,500 L180,480 L140,380 Z"
+        fill="url(#continentGradient)" stroke="#808080" stroke-width="2"/>
+
+  <!-- 欧洲 -->
+  <path d="M400,60 L580,50 L620,120 L580,160 L440,150 L400,90 Z"
+        fill="url(#continentGradient)" stroke="#808080" stroke-width="2"/>
+
+  <!-- 非洲 -->
+  <path d="M400,165 L580,155 L630,270 L580,400 L440,430 L380,310 L390,200 Z"
+        fill="url(#continentGradient)" stroke="#808080" stroke-width="2"/>
+
+  <!-- 亚洲大陆 -->
+  <path d="M550,50 L780,40 L920,120 L900,280 L760,310 L620,270 L590,130 Z"
+        fill="url(#continentGradient)" stroke="#808080" stroke-width="2"/>
+
+  <!-- 澳洲 -->
+  <path d="M800,340 L920,325 L960,420 L890,490 L800,480 L770,390 Z"
+        fill="url(#continentGradient)" stroke="#808080" stroke-width="2"/>
+
+  <!-- 标注点 -->
+  <!-- 中国 -->
+  <circle cx="760" cy="185" r="20" fill="#e74c3c" stroke="#c0392b" stroke-width="3" opacity="0.9"/>
+  <text x="760" y="191" font-size="16" fill="white" text-anchor="middle" font-weight="bold">中</text>
+
+  <!-- 韩国 -->
+  <circle cx="845" cy="192" r="14" fill="#3498db" stroke="#2980b9" stroke-width="2" opacity="0.9"/>
+  <text x="845" y="197" font-size="10" fill="white" text-anchor="middle" font-weight="bold">韩</text>
+
+  <!-- 日本 -->
+  <circle cx="905" cy="178" r="16" fill="#ffb6c1" stroke="#ff69b4" stroke-width="2" opacity="0.9"/>
+  <text x="905" y="184" font-size="11" fill="#333" text-anchor="middle" font-weight="bold">日</text>
+
+  <!-- 泰国 -->
+  <circle cx="730" cy="305" r="16" fill="#27ae60" stroke="#1e8449" stroke-width="2" opacity="0.9"/>
+  <text x="730" y="311" font-size="11" fill="white" text-anchor="middle" font-weight="bold">泰</text>
+
+  <!-- 欧洲 -->
+  <circle cx="500" cy="108" r="20" fill="#9b59b6" stroke="#8e44ad" stroke-width="3" opacity="0.9"/>
+  <text x="500" y="114" font-size="13" fill="white" text-anchor="middle" font-weight="bold">欧美</text>
+
+  <!-- 北美 -->
+  <circle cx="190" cy="175" r="20" fill="#9b59b6" stroke="#8e44ad" stroke-width="3" opacity="0.9"/>
+  <text x="190" y="181" font-size="13" fill="white" text-anchor="middle" font-weight="bold">欧美</text>
+
+  <!-- 图例 -->
+  <rect x="15" y="410" width="180" height="80" fill="white" stroke="#34495e" stroke-width="2" rx="8" opacity="0.95"/>
+  <text x="25" y="432" font-size="13" fill="#2c3e50" font-weight="bold">图例：</text>
+
+  <circle cx="35" cy="450" r="7" fill="#e74c3c"/>
+  <text x="50" y="454" font-size="11" fill="#2c3e50">中国</text>
+
+  <circle cx="95" cy="450" r="7" fill="#3498db"/>
+  <text x="110" y="454" font-size="11" fill="#2c3e50">韩国</text>
+
+  <circle cx="35" cy="472" r="7" fill="#ffb6c1"/>
+  <text x="50" y="476" font-size="11" fill="#2c3e50">日本</text>
+
+  <circle cx="95" cy="472" r="7" fill="#27ae60"/>
+  <text x="110" y="476" font-size="11" fill="#2c3e50">泰国</text>
+
+  <circle cx="155" cy="461" r="7" fill="#9b59b6"/>
+  <text x="170" y="465" font-size="11" fill="#2c3e50">欧美</text>
+</svg>
